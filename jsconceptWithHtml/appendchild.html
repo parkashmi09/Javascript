@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="background-color: black; color: white">
+    <ul class="language">
+      <li>javascript</li>
+    </ul>
+  </body>
+  <script>
+    function addLanguage(name) {
+      const listClass = document.createElement("li");
+      listClass.innerHTML = `${name}`;
+      document.querySelector(".language").appendChild(listClass);
+    }
+
+    addLanguage("java");
+    addLanguage("typescript");
+
+    function optimizedProcess(name) {
+      const listClass = document.createElement("li");
+      listClass.appendChild(document.createTextNode(name));
+      document.querySelector(".language").appendChild(listClass);
+    }
+    optimizedProcess("c#");
+
+    //edit
+    const modifyThird = document.querySelector("li:nth-child(3)");
+    console.log(modifyThird);
+    const newElement = document.createElement("li");
+    newElement.textContent = "Golang";
+    modifyThird.replaceWith(newElement);
+
+    const modifyFirst = document.querySelector("li:nth-child(1)");
+    const firstElement = document.createElement("li");
+    firstElement.textContent = "typesecript";
+    modifyFirst.replaceWith(firstElement);
+
+    const removeLast = document.querySelector("li:last-child");
+    removeLast.remove();
+  </script>
+</html>
