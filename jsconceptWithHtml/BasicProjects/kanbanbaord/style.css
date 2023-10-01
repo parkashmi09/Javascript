@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+}
+
+.main {
+  background-color: #756c6c;
+  height: 100vh;
+}
+.heading-container {
+  /* text-align: center;
+   */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 12px;
+}
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+.task-input {
+  outline: none;
+  border: none;
+  padding: 6px 8px;
+  border-radius: 4px;
+  margin-top: 12px;
+}
+.add-btn {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+  padding: 4px;
+  background-color: #dd2231;
+  cursor: pointer;
+}
+.board-main-container {
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+}
+.board-main-container > * {
+  flex: 1;
+  flex-basis: 50%;
+}
+.card-container {
+  background-color: #ebebeb;
+  border-radius: 10px;
+  min-height: 400px;
+  /* padding: 12px 14px; */
+}
+.card-top-task {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #b99dc6;
+  color: white;
+}
+.card-top-progress {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #7e96ce;
+  color: white;
+}
+.card-top-priority {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f57060;
+  color: white;
+}
+.card-top-done {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #b0e978;
+  color: white;
+}
+.card {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  background-color: white;
+  border-radius: 8px;
+  cursor: move;
+  margin: 12px 24px;
+}
+.dragging {
+  opacity: 0.5;
+}
+
+.container {
+  width: 100%;
+  min-height: 400px;
+}
+.card-wrapper {
+  width: 100%;
+}
+.delete-button {
+  height: 24px;
+  width: 48px;
+  background-color: #756c6c;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}

@@ -1,6 +1,10 @@
 const draggables = document.querySelectorAll(".draggable");
 const containers = document.querySelectorAll(".container");
 
+
+console.log(draggables);
+console.log(containers)
+
 // Define the getDragAfterElement function first
 const getDragAfterElement = (container, y) => {
   const draggableElements = [
